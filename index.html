@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turing Machine Interpreter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Turing Machine Configuration</h2>
+
+  <table id="tape">
+    <tr>
+      <!-- Add 30 cells for the tape -->
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">1</td> <!-- Middle cell at index 10 -->
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+      <td onclick="toggleCellValue(this)">0</td>
+    </tr>
+  </table>
+
+  <button onclick="addRow()">Add Row</button>
+  <button onclick="resetTape()">Reset Tape</button>
+  <button onclick="resetMachine()">Reset Machine</button>
+  <button onclick="performStep()">Perform Step</button>
+
+  <table id="tmTable">
+    <tr>
+      <th>State</th>
+      <th>0</th>
+      <th>1</th>
+      <th>Notes</th>
+    </tr>
+    <!-- Example initial row -->
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
