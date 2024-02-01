@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turing Machine Interpreter</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <h2>3 State Turing Machine</h2>
+
+  <table id="tape">
+    <tr>
+      <!-- Add 30 cells for the tape -->
+      <td onclick="toggleCellValue(this, 0 )">0</td>
+      <td onclick="toggleCellValue(this, 1 )">0</td>
+      <td onclick="toggleCellValue(this, 2 )">0</td>
+      <td onclick="toggleCellValue(this, 3 )">0</td>
+      <td onclick="toggleCellValue(this, 4 )">0</td>
+      <td onclick="toggleCellValue(this, 5 )">0</td>
+      <td onclick="toggleCellValue(this, 6 )">0</td>
+      <td onclick="toggleCellValue(this, 7 )">0</td>
+      <td onclick="toggleCellValue(this, 8 )">0</td>
+      <td onclick="toggleCellValue(this, 9 )">0</td>
+      <td onclick="toggleCellValue(this, 10 )">0</td> <!-- Middle cell at index 10 -->
+      <td onclick="toggleCellValue(this, 11 )">0</td>
+      <td onclick="toggleCellValue(this, 12 )">0</td>
+      <td onclick="toggleCellValue(this, 13 )">0</td>
+      <td onclick="toggleCellValue(this, 14 )">0</td>
+      <td onclick="toggleCellValue(this, 15 )">0</td>
+      <td onclick="toggleCellValue(this, 16 )">0</td>
+      <td onclick="toggleCellValue(this, 17 )">0</td>
+      <td onclick="toggleCellValue(this, 18 )">0</td>
+      <td onclick="toggleCellValue(this, 19 )">0</td>
+      <td onclick="toggleCellValue(this, 20 )">0</td>
+      <td onclick="toggleCellValue(this, 21 )">0</td>
+      <td onclick="toggleCellValue(this, 22 )">0</td>
+      <td onclick="toggleCellValue(this, 23 )">0</td>
+      <td onclick="toggleCellValue(this, 24 )">0</td>
+      <td onclick="toggleCellValue(this, 25 )">0</td>
+      <td onclick="toggleCellValue(this, 26 )">0</td>
+      <td onclick="toggleCellValue(this, 27 )">0</td>
+      <td onclick="toggleCellValue(this, 28 )">0</td>
+      <td onclick="toggleCellValue(this, 29 )">0</td>
+      <td onclick="toggleCellValue(this, 30 )">0</td>
+      <td onclick="toggleCellValue(this, 31 )">0</td>
+      <td onclick="toggleCellValue(this, 32 )">0</td>
+      <td onclick="toggleCellValue(this, 33 )">0</td>
+      <td onclick="toggleCellValue(this, 34 )">0</td>
+      <td onclick="toggleCellValue(this, 35 )">0</td>
+      <td onclick="toggleCellValue(this, 36 )">0</td>
+      <td onclick="toggleCellValue(this, 37 )">0</td>
+      <td onclick="toggleCellValue(this, 38 )">0</td>
+      <td onclick="toggleCellValue(this, 39 )">0</td>
+      <td onclick="toggleCellValue(this, 40 )">0</td>
+      <td onclick="toggleCellValue(this, 41 )">0</td>
+      <td onclick="toggleCellValue(this, 42 )">0</td>
+      <td onclick="toggleCellValue(this, 43 )">0</td>
+      <td onclick="toggleCellValue(this, 44 )">0</td>
+      <td onclick="toggleCellValue(this, 45 )">0</td>
+      <td onclick="toggleCellValue(this, 46 )">0</td>
+      <td onclick="toggleCellValue(this, 47 )">0</td>
+      <td onclick="toggleCellValue(this, 48 )">0</td>
+      <td onclick="toggleCellValue(this, 49 )">0</td>
+      <td onclick="toggleCellValue(this, 50 )">0</td>
+    </tr>
+  </table>
+
+  <button onclick="addRow()">Add Row</button>
+  <button onclick="resetTape()">Reset Tape</button>
+  <button onclick="resetMachine()">Reset Machine</button>
+  <button onclick="performStep()">Perform Step</button>
+  <button id="toggleAutoStep" onclick="toggleAutoStep()">Toggle Auto Step</button>
+  <button onclick="clearRows()">Clear Rows</button>
+
+  <table id="tmTable">
+    <tr>
+      <th>State</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>Notes</th>
+    </tr>
+    <!-- Example initial row -->
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
